@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="boom" src="boom.wav" type="audio/wav"></audio>
+    <audio id="applause" src="applause.wav" type="audio/wav"></audio>
+    <div id="wrapper">
+        <div id="info">
+                <p class="left">PLAYER</p>
+                <p id="userName" class="right">INSERT NAME</p>
+                <p class="left">SCORE</p>
+                <p id="score" class="right">0</p>
+                <p align="center">HELP</p>
+                <ul>
+                    <li>LEFT ARROW: LEFT</li>
+                    <li>RIGHT ARROW: RIGHT</li>
+                    <li>DOWN ARROW: DROP</li>
+                    <li>UP ARROW: ROTATE CLOCK-WISE</li>
+                </ul>
+                <button class="bottom" onclick="history.back()">BACK</button>
+           
+        </div>
+        <div id="game">
+            <p align="center">
+            <canvas id="tetris" width="240" height="400">No canvas support</canvas>
+        </p>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
